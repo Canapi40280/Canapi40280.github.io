@@ -1,0 +1,92 @@
+
+ul
+{
+	list-style-type: none;
+	margin: -11;
+	padding: 0;
+	overflow: hidden;
+	background-color: #80D47D;
+}
+
+li
+{
+	float: left;
+}
+
+li a
+{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover:not(.active)
+{
+	background-color: lightpink;
+}
+
+.active
+{
+	background-color: #04AA6D;
+}
+
+ol
+{
+	list-style-type: none;
+	counter-reset: li;
+}
+
+.liste
+{
+	font-size: 2rem;
+}
+
+.liste :before
+{
+	counter-increment: li;
+	content: counter(li, decimal-leading-zero);
+	color: red;
+	margin-right: 0.25em;
+}
+
+.page
+{
+	background-color: teal;
+}
+
+.lien
+{
+	text-decoration: inherit;
+	color:black;
+}
+
+.img
+{
+	vertical-align: middle;
+}
+
+.nom
+{
+	text-align: center;
+	vertical-align: middle;
+}
+
+.principal
+{
+	background-color: cadetblue;
+}
+
+.produit
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.marque_block
+{
+	display: inline-block;
+	align-content:space-between;
+}
